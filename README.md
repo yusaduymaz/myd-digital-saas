@@ -48,9 +48,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
      > Replace these placeholders with your own screenshots.
 
-     ![Admin Dashboard Preview](./docs/admin.png)
+     ![image](./images/1.png)
 
-     ![Team Management](./docs/team.png)
 
      ---
 
