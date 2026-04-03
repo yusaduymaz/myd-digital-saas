@@ -48,7 +48,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
      > Replace these placeholders with your own screenshots.
 
-     ![image](./images/1.png)
+     ![image](/images/1.png)
 
 
      ---
