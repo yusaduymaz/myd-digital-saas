@@ -41,17 +41,41 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
    access control**, and a **premium, glassmorphism-inspired UI** out of the box.
 
      > This repository is a complete reference implementation of a tenant-aware SaaS architecture with real-time admin capabilities and opinionated best practices.
+---
+   ## 📷 Ekran Görüntüleri
 
-     ---
+*(Buraya projenin önemli ekranlarının görsellerini ekleyebilirsiniz. Örneğin: Login Ekranı, Rol Yönetimi Sayfası, AI Analiz Sonucu vb.)*
 
-     ## 📸 Previews
+<details>
+<summary>📸 Ekran Görüntülerini Görüntüle</summary>
+<br>
 
-     > Replace these placeholders with your own screenshots.
+![image](/images/1.png)
+![image](/images/2.png)
+![image](/images/3.png)
+![image](/images/4.png)
+![image](/images/5.png)
+![image](/images/6.png)
+![image](/images/7.png)
+![image](/images/8.png)
+![image](/images/9.png)
+![image](/images/10.png)
+![image](/images/11.png)
+![image](/images/12.png)
+![image](/images/13.png)
+![image](/images/14.png)
+![image](/images/15.png)
+![image](/images/16.png)
+![image](/images/17.png)
+![image](/images/18.png)
+![image](/images/19.png)
+![image](/images/20.png)
 
-     ![image](images/1.png)
 
 
-     ---
+</details>
+
+---
 
      ## 🔑 Key Features
 
