@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* MYD Digital Design System - Kinetic Architect */
+  --color-primary: #fff6df;
+  --color-primary-container: #ffd700;
+  --color-primary-fixed: #ffe16d;
+  --color-primary-fixed-dim: #e9c400;
+  --color-on-primary: #3a3000;
+  --color-on-primary-container: #705e00;
+  --color-on-primary-fixed: #221b00;
+  --color-on-primary-fixed-variant: #544600;
+
+  --color-secondary: #c6c6c7;
+  --color-secondary-container: #454747;
+  --color-secondary-fixed: #e2e2e2;
+  --color-secondary-fixed-dim: #c6c6c7;
+  --color-on-secondary: #2f3131;
+  --color-on-secondary-container: #b4b5b5;
+  --color-on-secondary-fixed: #1a1c1c;
+  --color-on-secondary-fixed-variant: #454747;
+
+  --color-tertiary: #f5f6ff;
+  --color-tertiary-container: #cbdaff;
+  --color-tertiary-fixed: #d8e2ff;
+  --color-tertiary-fixed-dim: #adc6ff;
+  --color-on-tertiary: #002e6a;
+  --color-on-tertiary-container: #005bc4;
+  --color-on-tertiary-fixed: #001a42;
+  --color-on-tertiary-fixed-variant: #004395;
+
+  --color-background: #111318;
+  --color-surface: #111318;
+  --color-surface-dim: #111318;
+  --color-surface-bright: #37393f;
+  --color-surface-container-lowest: #0c0e13;
+  --color-surface-container-low: #1a1b21;
+  --color-surface-container: #1e1f25;
+  --color-surface-container-high: #282a2f;
+  --color-surface-container-highest: #33353a;
+  --color-surface-variant: #33353a;
+  --color-surface-tint: #e9c400;
+
+  --color-on-background: #e2e2e9;
+  --color-on-surface: #e2e2e9;
+  --color-on-surface-variant: #d0c6ab;
+  --color-inverse-surface: #e2e2e9;
+  --color-inverse-on-surface: #2e3036;
+  --color-inverse-primary: #705d00;
+
+  --color-outline: #999077;
+  --color-outline-variant: #4d4732;
+
+  --color-error: #ffb4ab;
+  --color-error-container: #93000a;
+  --color-on-error: #690005;
+  --color-on-error-container: #ffdad6;
+
+  /* Fonts */
+  --font-headline: var(--font-space-grotesk), "Space Grotesk", sans-serif;
+  --font-body: var(--font-inter), "Inter", sans-serif;
+  --font-label: var(--font-space-grotesk), "Space Grotesk", sans-serif;
+}
+
+/* Glass Panel Effect */
+.glass-panel {
+  background: rgba(30, 31, 37, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-card {
+  background: rgba(30, 31, 37, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Kinetic Gradient */
+.kinetic-gradient {
+  background: linear-gradient(135deg, #ffd700 0%, #e9c400 100%);
+}
+
+/* Kinetic Grid Background */
+.kinetic-grid {
+  background-image: 
+    linear-gradient(to right, rgba(255, 215, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 215, 0, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Grid Background */
+.grid-bg {
+  background-image: radial-gradient(circle, #33353a 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Architect Glow */
+.architect-glow {
+  box-shadow: 0 40px 60px -15px rgba(0, 0, 0, 0.06);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-page {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Selection */
+::selection {
+  background-color: #ffd700;
+  color: #705e00;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-body);
+}

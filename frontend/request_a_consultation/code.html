@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#454747",
+              "secondary-fixed-dim": "#c6c6c7",
+              "error": "#ffb4ab",
+              "on-secondary": "#2f3131",
+              "secondary-fixed": "#e2e2e2",
+              "on-secondary-container": "#b4b5b5",
+              "surface-container-high": "#282a2f",
+              "surface-dim": "#111318",
+              "on-background": "#e2e2e9",
+              "surface-container-lowest": "#0c0e13",
+              "surface-container-highest": "#33353a",
+              "outline-variant": "#4d4732",
+              "primary-fixed-dim": "#e9c400",
+              "surface-tint": "#e9c400",
+              "secondary": "#c6c6c7",
+              "background": "#111318",
+              "on-secondary-fixed": "#1a1c1c",
+              "surface-variant": "#33353a",
+              "primary": "#fff6df",
+              "inverse-surface": "#e2e2e9",
+              "primary-container": "#ffd700",
+              "inverse-on-surface": "#2e3036",
+              "on-tertiary-container": "#005bc4",
+              "tertiary-fixed-dim": "#adc6ff",
+              "tertiary": "#f5f6ff",
+              "secondary-container": "#454747",
+              "on-primary-container": "#705e00",
+              "surface-container-low": "#1a1b21",
+              "outline": "#999077",
+              "on-tertiary": "#002e6a",
+              "on-surface-variant": "#d0c6ab",
+              "on-primary-fixed": "#221b00",
+              "tertiary-fixed": "#d8e2ff",
+              "on-tertiary-fixed-variant": "#004395",
+              "on-primary": "#3a3000",
+              "error-container": "#93000a",
+              "on-primary-fixed-variant": "#544600",
+              "surface-bright": "#37393f",
+              "on-tertiary-fixed": "#001a42",
+              "inverse-primary": "#705d00",
+              "surface-container": "#1e1f25",
+              "surface": "#111318",
+              "on-error-container": "#ffdad6",
+              "on-error": "#690005",
+              "tertiary-container": "#cbdaff",
+              "primary-fixed": "#ffe16d",
+              "on-surface": "#e2e2e9"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(30, 31, 37, 0.7);
+            backdrop-filter: blur(20px);
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #ffd700 0%, #e9c400 100%);
+        }
+        body {
+            background-color: #111318;
+            color: #e2e2e9;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="w-full top-0 z-50 bg-[#111318] dark:bg-[#111318] no-border bg-surface-container">
+<div class="flex justify-between items-center px-12 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-white dark:text-white font-['Space_Grotesk'] tracking-tight">
+                MYD Digital
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-gray-400 hover:text-white transition-colors font-['Space_Grotesk'] tracking-tight" href="#">Growth Strategy</a>
+<a class="text-gray-400 hover:text-white transition-colors font-['Space_Grotesk'] tracking-tight" href="#">Services</a>
+<a class="text-gray-400 hover:text-white transition-colors font-['Space_Grotesk'] tracking-tight" href="#">Case Studies</a>
+<a class="text-gray-400 hover:text-white transition-colors font-['Space_Grotesk'] tracking-tight" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded font-['Space_Grotesk'] font-bold hover:bg-primary-fixed transition-all active:scale-95">
+                    Free Audit
+                </button>
+<span class="material-symbols-outlined text-white md:hidden cursor-pointer" data-icon="menu">menu</span>
+</div>
+</div>
+</nav>
+<main class="min-h-screen relative overflow-hidden">
+<!-- Background Architectural Elements -->
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<div class="absolute top-20 right-[-10%] w-[600px] h-[600px] border border-primary/20 rotate-45"></div>
+<div class="absolute bottom-40 right-10 w-[400px] h-[400px] border border-primary/10 -rotate-12"></div>
+</div>
+<section class="max-w-[1440px] mx-auto px-12 py-24 grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Content Side -->
+<div class="lg:col-span-5 space-y-8 sticky top-32">
+<div class="inline-block px-3 py-1 bg-surface-container-highest border border-outline-variant/15 text-primary text-xs font-label uppercase tracking-widest">
+                    Consultation Request
+                </div>
+<h1 class="text-5xl md:text-6xl font-headline font-bold text-white tracking-tighter leading-none">
+                    Architect Your <span class="text-primary-container">Growth Strategy</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-lg leading-relaxed">
+                    Join the top 1% of B2B enterprises leveraging kinetic growth architecture. Our strategy sessions are designed to map your growth trajectory with surgical precision.
+                </p>
+<div class="pt-8 space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-white">Surgical Accuracy</h3>
+<p class="text-sm text-on-surface-variant">Data-driven roadmaps that eliminate waste and maximize ROAS.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined" data-icon="speed">speed</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-white">Kinetic Momentum</h3>
+<p class="text-sm text-on-surface-variant">Rapid deployment cycles designed for scale-ready enterprises.</p>
+</div>
+</div>
+</div>
+<div class="mt-12 p-6 glass-panel rounded border border-outline-variant/10">
+<div class="flex -space-x-3">
+<img alt="Portrait of a professional marketing executive" class="w-10 h-10 rounded-full border-2 border-background" data-alt="Close-up portrait of a professional male executive in a dark suit with soft office lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaHbBoEU74Ngpsi1bgx-P1a93wQh2BrGRVx_pdAIu4VDOomtD0i4O3NXC_vr-9o8zo0MsY4VWgvOQYLwsYC5Qv6eRHuXEQPOswWLg2iBvAgHodoZvSyRI5IpxGjeqt00oMOr5axr4GVLQYZ0b1X6GNhNw9kdUKdfqESLgJMjt9c8jw58QLhevX_uVDCTrrDNabEcHrQPmegckn2Mi6uJxRZGF-BUfYklprCXbEwttA7xGkKMvcLIfYMQ-z36YfwOPuWs-2mluvYOY"/>
+<img alt="Portrait of a female growth analyst" class="w-10 h-10 rounded-full border-2 border-background" data-alt="Professional headshot of a woman with glasses in a modern high-tech office environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfnlE6m_4ndhf-2PJawGLgJ5zdQ4xaP_7yTFOJgN0tcVKu2iEldvqvorG4ESLlWCk9DJKGBTrvJ6hUh6xuDaftPd72r7FH8ahagVAzNo7g1_s0k5KqzeV-9kypqc_KMcp56T3lyGR2U9w39nXW2JtqkQXH670duRr8LX9LZs4gDTIOvdGG1eGNMCnBO5oOZiSBa0bkdaN7HykcZAp_w_19q4GCaN3O2tmj7Xw8zsl0hTkVxEfxs_WDkirZp8m7gUeWbPhEJ3A690o"/>
+<img alt="Portrait of a senior strategist" class="w-10 h-10 rounded-full border-2 border-background" data-alt="Senior male business professional smiling in a bright architectural space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBlVoK34r4LWVRiVEC4S1OKzvhCRE0hqpzt1sW2BxqGnSF6w_IjyPog6_nuflE-d-ALGW2Y-34WsN-iaQKPr3wXKuoeCHnCcntP9af1Rx4_69sZpcTk0DQrXAzPJGAZppiI13weDpiiuZAF0sRfrO9ej-xvVdHPF4P3RHgwHDo1KBFtj4R44Gd3G3NZgjCQAydAkjVba6yFBt5N_RcXhU3wQL_EQae9BDTWE-ITXwP6Plo8QBgW9C7q9SjSabl7j4A5F3vVh_-Jko"/>
+</div>
+<p class="mt-4 text-xs font-label text-on-surface-variant tracking-wide">TRUSTED BY 500+ ENTERPRISE PARTNERS GLOBALLY</p>
+</div>
+</div>
+<!-- Form Side -->
+<div class="lg:col-span-7">
+<div class="glass-panel p-8 md:p-12 rounded-xl shadow-2xl relative">
+<div class="absolute top-0 right-0 p-8 opacity-20">
+<span class="material-symbols-outlined text-6xl text-primary-container" data-icon="architecture">architecture</span>
+</div>
+<form class="space-y-6 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block font-label text-sm text-on-surface-variant tracking-wide" for="name">Name</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/20 rounded px-4 py-4 text-white font-headline placeholder:text-surface-variant focus:outline-none focus:ring-1 focus:ring-primary-container focus:border-primary-container transition-all" id="name" name="name" placeholder="Alexander Sterling" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block font-label text-sm text-on-surface-variant tracking-wide" for="company">Company</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/20 rounded px-4 py-4 text-white font-headline placeholder:text-surface-variant focus:outline-none focus:ring-1 focus:ring-primary-container focus:border-primary-container transition-all" id="company" name="company" placeholder="Enterprize Tech Group" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block font-label text-sm text-on-surface-variant tracking-wide" for="email">Email</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/20 rounded px-4 py-4 text-white font-headline placeholder:text-surface-variant focus:outline-none focus:ring-1 focus:ring-primary-container focus:border-primary-container transition-all" id="email" name="email" placeholder="alex@enterprize.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="block font-label text-sm text-on-surface-variant tracking-wide" for="needs">Tell us about your needs</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant/20 rounded px-4 py-4 text-white font-headline placeholder:text-surface-variant focus:outline-none focus:ring-1 focus:ring-primary-container focus:border-primary-container transition-all resize-none" id="needs" name="needs" placeholder="Outline your core objectives..." rows="5"></textarea>
+</div>
+<div class="pt-4">
+<button class="kinetic-gradient w-full py-5 rounded font-headline font-bold text-on-primary-container text-lg tracking-tight hover:shadow-[0_0_30px_rgba(255,215,0,0.3)] transition-all active:scale-[0.98]" type="submit">
+                                Send Request
+                            </button>
+<p class="text-center mt-6 text-xs text-on-surface-variant font-body">
+                                By submitting this form, you agree to our 
+                                <a class="text-primary hover:underline transition-all" href="#">Privacy Policy</a> and 
+                                <a class="text-primary hover:underline transition-all" href="#">Data Processing Terms</a>.
+                            </p>
+</div>
+</form>
+</div>
+<!-- Bento Metric Grid (Contextual Social Proof) -->
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+<div class="bg-surface-container-low p-6 rounded border border-outline-variant/5">
+<div class="text-2xl font-headline font-bold text-primary-container">142%</div>
+<div class="text-[10px] font-label text-on-surface-variant tracking-widest uppercase mt-1">Avg. ROAS Increase</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded border border-outline-variant/5">
+<div class="text-2xl font-headline font-bold text-primary-container">3.8M</div>
+<div class="text-[10px] font-label text-on-surface-variant tracking-widest uppercase mt-1">Leads Generated</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded border border-outline-variant/5 col-span-2 md:col-span-1">
+<div class="text-2xl font-headline font-bold text-primary-container">12ms</div>
+<div class="text-[10px] font-label text-on-surface-variant tracking-widest uppercase mt-1">Sync Latency</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#4D4732]/15 bg-[#111318] dark:bg-[#111318] tonal shift using surface-container-low">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-12 w-full max-w-[1440px] mx-auto">
+<div class="text-xl font-bold text-white font-['Inter'] text-sm tracking-wide">
+                MYD Digital
+            </div>
+<div class="flex gap-8 my-6 md:my-0">
+<a class="text-gray-500 hover:text-yellow-400 transition-colors font-['Inter'] text-sm tracking-wide" href="#">Privacy Policy</a>
+<a class="text-gray-500 hover:text-yellow-400 transition-colors font-['Inter'] text-sm tracking-wide" href="#">Terms of Service</a>
+<a class="text-gray-500 hover:text-yellow-400 transition-colors font-['Inter'] text-sm tracking-wide" href="#">Contact</a>
+</div>
+<div class="text-gray-500 font-['Inter'] text-sm tracking-wide">
+                © 2024 MYD Digital. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

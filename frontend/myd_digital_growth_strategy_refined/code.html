@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Growth Strategy | MYD Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#0c0e13",
+              "secondary-container": "#454747",
+              "on-surface": "#e2e2e9",
+              "on-primary-fixed-variant": "#544600",
+              "on-tertiary": "#002e6a",
+              "surface-bright": "#37393f",
+              "on-surface-variant": "#d0c6ab",
+              "surface-variant": "#33353a",
+              "primary": "#fff6df",
+              "surface-dim": "#111318",
+              "on-tertiary-fixed": "#001a42",
+              "primary-container": "#ffd700",
+              "on-primary-container": "#705e00",
+              "secondary": "#c6c6c7",
+              "on-secondary": "#2f3131",
+              "on-background": "#e2e2e9",
+              "inverse-on-surface": "#2e3036",
+              "outline-variant": "#4d4732",
+              "secondary-fixed-dim": "#c6c6c7",
+              "on-error-container": "#ffdad6",
+              "secondary-fixed": "#e2e2e2",
+              "tertiary-fixed-dim": "#adc6ff",
+              "on-primary": "#3a3000",
+              "on-tertiary-container": "#005bc4",
+              "on-primary-fixed": "#221b00",
+              "on-secondary-fixed": "#1a1c1c",
+              "surface-container-highest": "#33353a",
+              "primary-fixed-dim": "#e9c400",
+              "tertiary-fixed": "#d8e2ff",
+              "surface-container-low": "#1a1b21",
+              "surface-container-high": "#282a2f",
+              "inverse-surface": "#e2e2e9",
+              "error-container": "#93000a",
+              "on-error": "#690005",
+              "error": "#ffb4ab",
+              "inverse-primary": "#705d00",
+              "tertiary": "#f5f6ff",
+              "surface-tint": "#e9c400",
+              "on-secondary-fixed-variant": "#454747",
+              "background": "#111318",
+              "primary-fixed": "#ffe16d",
+              "surface-container": "#1e1f25",
+              "on-tertiary-fixed-variant": "#004395",
+              "on-secondary-container": "#b4b5b5",
+              "tertiary-container": "#cbdaff",
+              "outline": "#999077",
+              "surface": "#111318"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(30, 31, 37, 0.7);
+            backdrop-filter: blur(12px);
+        }
+        .kinetic-grid {
+            background-image: linear-gradient(#4d473215 1px, transparent 1px), linear-gradient(90deg, #4d473215 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-page {
+            animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}[type='text'],input:where(:not([type])),[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select{-webkit-appearance:none;appearance:none;background-color:#fff;border-color:#6b7280;border-width:1px;border-radius:0px;padding-top:0.5rem;padding-right:0.75rem;padding-bottom:0.5rem;padding-left:0.75rem;font-size:1rem;line-height:1.5rem;--tw-shadow:0 0 #0000;}[type='text']:focus, input:where(:not([type])):focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);border-color:#2563eb}input::placeholder,textarea::placeholder{color:#6b7280;opacity:1}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-date-and-time-value{min-height:1.5em;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit,::-webkit-datetime-edit-year-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-meridiem-field{padding-top:0;padding-bottom:0}select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");background-position:right 0.5rem center;background-repeat:no-repeat;background-size:1.5em 1.5em;padding-right:2.5rem;print-color-adjust:exact}[multiple],[size]:where(select:not([size="1"])){background-image:initial;background-position:initial;background-repeat:unset;background-size:initial;padding-right:0.75rem;print-color-adjust:unset}[type='checkbox'],[type='radio']{-webkit-appearance:none;appearance:none;padding:0;print-color-adjust:exact;display:inline-block;vertical-align:middle;background-origin:border-box;-webkit-user-select:none;user-select:none;flex-shrink:0;height:1rem;width:1rem;color:#2563eb;background-color:#fff;border-color:#6b7280;border-width:1px;--tw-shadow:0 0 #0000}[type='checkbox']{border-radius:0px}[type='radio']{border-radius:100%}[type='checkbox']:focus,[type='radio']:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:2px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}[type='checkbox']:checked,[type='radio']:checked{border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat}[type='checkbox']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='checkbox']:checked{-webkit-appearance:auto;appearance:auto}}[type='radio']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='radio']:checked{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus{border-color:transparent;background-color:currentColor}[type='checkbox']:indeterminate{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat;}@media (forced-colors: active) {[type='checkbox']:indeterminate{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus{border-color:transparent;background-color:currentColor}[type='file']{background:unset;border-color:inherit;border-width:0;border-radius:0;padding:0;font-size:unset;line-height:inherit}[type='file']:focus{outline:1px solid ButtonText;outline:1px auto -webkit-focus-ring-color}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.-inset-4{inset:-1rem}.inset-0{inset:0px}.-right-10{right:-2.5rem}.-top-10{top:-2.5rem}.bottom-20{bottom:5rem}.right-0{right:0px}.top-0{top:0px}.top-1\/4{top:25%}.-z-10{z-index:-10}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.order-1{order:1}.order-2{order:2}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-14{margin-bottom:3.5rem}.mb-2{margin-bottom:0.5rem}.mb-20{margin-bottom:5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-1{height:0.25rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-2{height:0.5rem}.h-20{height:5rem}.h-96{height:24rem}.h-\[1px\]{height:1px}.h-\[20\%\]{height:20%}.h-\[30\%\]{height:30%}.h-\[45\%\]{height:45%}.h-\[500px\]{height:500px}.h-\[70\%\]{height:70%}.h-\[90\%\]{height:90%}.h-full{height:100%}.min-h-\[921px\]{min-height:921px}.w-1{width:0.25rem}.w-1\.5{width:0.375rem}.w-1\/3{width:33.333333%}.w-12{width:3rem}.w-14{width:3.5rem}.w-3\/4{width:75%}.w-96{width:24rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.max-w-screen-2xl{max-width:1536px}.flex-1{flex:1 1 0%}.scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-10{gap:2.5rem}.gap-16{gap:4rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-10 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded{border-radius:0.125rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:0.75rem}.rounded-lg{border-radius:0.25rem}.rounded-xl{border-radius:0.5rem}.border{border-width:1px}.border-b-2{border-bottom-width:2px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-\[\#4D4732\]\/15{border-color:rgb(77 71 50 / 0.15)}.border-outline-variant\/10{border-color:rgb(77 71 50 / 0.1)}.border-outline-variant\/20{border-color:rgb(77 71 50 / 0.2)}.border-outline-variant\/30{border-color:rgb(77 71 50 / 0.3)}.border-primary-container{--tw-border-opacity:1;border-color:rgb(255 215 0 / var(--tw-border-opacity, 1))}.border-primary-container\/20{border-color:rgb(255 215 0 / 0.2)}.border-yellow-400{--tw-border-opacity:1;border-color:rgb(250 204 21 / var(--tw-border-opacity, 1))}.bg-\[\#111318\]{--tw-bg-opacity:1;background-color:rgb(17 19 24 / var(--tw-bg-opacity, 1))}.bg-background{--tw-bg-opacity:1;background-color:rgb(17 19 24 / var(--tw-bg-opacity, 1))}.bg-outline-variant{--tw-bg-opacity:1;background-color:rgb(77 71 50 / var(--tw-bg-opacity, 1))}.bg-primary-container{--tw-bg-opacity:1;background-color:rgb(255 215 0 / var(--tw-bg-opacity, 1))}.bg-primary-container\/10{background-color:rgb(255 215 0 / 0.1)}.bg-primary-container\/5{background-color:rgb(255 215 0 / 0.05)}.bg-surface-container-high{--tw-bg-opacity:1;background-color:rgb(40 42 47 / var(--tw-bg-opacity, 1))}.bg-surface-container-low{--tw-bg-opacity:1;background-color:rgb(26 27 33 / var(--tw-bg-opacity, 1))}.bg-surface-container-lowest{--tw-bg-opacity:1;background-color:rgb(12 14 19 / var(--tw-bg-opacity, 1))}.bg-\[radial-gradient\(circle_at_center\2c _var\(--tw-gradient-stops\)\)\]{background-image:radial-gradient(circle at center, var(--tw-gradient-stops))}.from-primary-container\/5{--tw-gradient-from:rgb(255 215 0 / 0.05) var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 215 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.object-cover{object-fit:cover}.p-10{padding:2.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-12{padding-left:3rem;padding-right:3rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-32{padding-top:8rem;padding-bottom:8rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-40{padding-top:10rem;padding-bottom:10rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.pb-1{padding-bottom:0.25rem}.pt-20{padding-top:5rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-\[\'Space_Grotesk\'\]{font-family:'Space Grotesk'}.font-body{font-family:Inter}.font-headline{font-family:Space Grotesk}.font-label{font-family:Space Grotesk}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-\[10px\]{font-size:10px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.uppercase{text-transform:uppercase}.leading-\[0\.9\]{line-height:0.9}.leading-\[1\.1\]{line-height:1.1}.leading-relaxed{line-height:1.625}.tracking-\[0\.2em\]{letter-spacing:0.2em}.tracking-tight{letter-spacing:-0.025em}.tracking-tighter{letter-spacing:-0.05em}.tracking-widest{letter-spacing:0.1em}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-on-background{--tw-text-opacity:1;color:rgb(226 226 233 / var(--tw-text-opacity, 1))}.text-on-primary-container{--tw-text-opacity:1;color:rgb(112 94 0 / var(--tw-text-opacity, 1))}.text-on-surface-variant{--tw-text-opacity:1;color:rgb(208 198 171 / var(--tw-text-opacity, 1))}.text-outline{--tw-text-opacity:1;color:rgb(153 144 119 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(255 246 223 / var(--tw-text-opacity, 1))}.text-primary-container{--tw-text-opacity:1;color:rgb(255 215 0 / var(--tw-text-opacity, 1))}.text-primary-fixed{--tw-text-opacity:1;color:rgb(255 225 109 / var(--tw-text-opacity, 1))}.text-primary-fixed\/80{color:rgb(255 225 109 / 0.8)}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.opacity-40{opacity:0.4}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_10px_\#ffd700\]{--tw-shadow:0 0 10px #ffd700;--tw-shadow-colored:0 0 10px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-\[120px\]{--tw-blur:blur(120px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-150{transition-duration:150ms}.duration-200{transition-duration:200ms}.duration-300{transition-duration:300ms}.ease-in-out{transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}.selection\:bg-primary-container *::selection{--tw-bg-opacity:1;background-color:rgb(255 215 0 / var(--tw-bg-opacity, 1))}.selection\:text-on-primary-container *::selection{--tw-text-opacity:1;color:rgb(112 94 0 / var(--tw-text-opacity, 1))}.selection\:bg-primary-container::selection{--tw-bg-opacity:1;background-color:rgb(255 215 0 / var(--tw-bg-opacity, 1))}.selection\:text-on-primary-container::selection{--tw-text-opacity:1;color:rgb(112 94 0 / var(--tw-text-opacity, 1))}.hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-primary-container\/30:hover{border-color:rgb(255 215 0 / 0.3)}.hover\:bg-primary-fixed:hover{--tw-bg-opacity:1;background-color:rgb(255 225 109 / var(--tw-bg-opacity, 1))}.hover\:bg-surface-container-high:hover{--tw-bg-opacity:1;background-color:rgb(40 42 47 / var(--tw-bg-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-yellow-500:hover{--tw-text-opacity:1;color:rgb(234 179 8 / var(--tw-text-opacity, 1))}.hover\:shadow-\[0_0_30px_rgba\(255\2c 215\2c 0\2c 0\.4\)\]:hover{--tw-shadow:0 0 30px rgba(255,215,0,0.4);--tw-shadow-colored:0 0 30px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-\[0_0_50px_rgba\(255\2c 215\2c 0\2c 0\.3\)\]:hover{--tw-shadow:0 0 50px rgba(255,215,0,0.3);--tw-shadow-colored:0 0 50px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:col-span-2{grid-column:span 2 / span 2}.md\:block{display:block}.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:text-left{text-align:left}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-8xl{font-size:6rem;line-height:1}}@media (min-width: 1024px){.lg\:order-1{order:1}.lg\:order-2{order:2}.lg\:col-span-4{grid-column:span 4 / span 4}.lg\:col-span-8{grid-column:span 8 / span 8}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:px-24{padding-left:6rem;padding-right:6rem}}@media (min-width: 1280px){.xl\:block{display:block}}</style></head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container animate-page" data-mode="connect">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#111318] backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 h-20 max-w-7xl mx-auto w-full">
+<div class="text-2xl font-bold tracking-tighter text-white font-['Space_Grotesk']">MYD Digital</div>
+<nav class="hidden md:flex gap-10">
+<a class="font-['Space_Grotesk'] tracking-tight text-yellow-400 border-b-2 border-yellow-400 pb-1 duration-300 ease-in-out" href="#">Growth Strategy</a>
+<a class="font-['Space_Grotesk'] tracking-tight text-gray-400 hover:text-white transition-colors duration-300 ease-in-out" href="#">Services</a>
+<a class="font-['Space_Grotesk'] tracking-tight text-gray-400 hover:text-white transition-colors duration-300 ease-in-out" href="#">Case Studies</a>
+<a class="font-['Space_Grotesk'] tracking-tight text-gray-400 hover:text-white transition-colors duration-300 ease-in-out" href="#">About</a>
+</nav>
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 font-label font-bold rounded hover:bg-primary-fixed transition-all active:scale-95 duration-150">
+                Get Started
+            </button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex flex-col justify-center px-8 lg:px-24 kinetic-grid overflow-hidden">
+<div class="absolute top-1/4 right-0 w-96 h-96 bg-primary-container/10 rounded-full blur-[120px] -z-10"></div>
+<div class="max-w-5xl z-10">
+<div class="mb-6 flex items-center gap-4">
+<span class="h-[1px] w-12 bg-primary-container"></span>
+<span class="font-label text-primary-container tracking-widest uppercase text-xs font-bold">The Gold Standard of Scale</span>
+</div>
+<h1 class="font-headline text-5xl md:text-8xl font-bold tracking-tighter leading-[0.9] text-primary mb-8">The <span class="text-primary-container">Growth</span> <br/> Strategy</h1>
+<p class="text-xl md:text-3xl text-on-surface-variant font-light max-w-2xl leading-relaxed mb-12">
+                    A technical-first growth engine powering <span class="text-primary-container font-bold">300% scale</span> for B2B enterprises through precision engineering and data-driven momentum.
+                </p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 font-label font-bold text-lg rounded-lg flex items-center gap-3 hover:shadow-[0_0_30px_rgba(255,215,0,0.4)] transition-all">
+                        Explore Methodology
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="glass-card border border-outline-variant/20 text-primary-fixed px-8 py-4 font-label font-bold text-lg rounded-lg hover:bg-surface-container-high transition-all">
+                        View Case Studies
+                    </button>
+</div>
+</div>
+<!-- Kinetic Data Stream Element (Visual Only) -->
+<div class="absolute right-0 bottom-20 hidden xl:block w-1/3 opacity-40">
+<div class="p-8 glass-card rounded-xl border-l-4 border-primary-container">
+<div class="flex justify-between items-end mb-8">
+<div>
+<p class="font-label text-xs text-primary-container font-bold mb-1">SYSTEM_MOMENTUM</p>
+<h3 class="text-3xl font-headline font-bold">42.8% ↑</h3>
+</div>
+<div class="flex gap-1 h-12 items-end">
+<div class="w-1.5 h-[20%] bg-outline-variant"></div>
+<div class="w-1.5 h-[45%] bg-outline-variant"></div>
+<div class="w-1.5 h-[30%] bg-outline-variant"></div>
+<div class="w-1.5 h-[70%] bg-primary-container"></div>
+<div class="w-1.5 h-[90%] bg-primary-container shadow-[0_0_10px_#ffd700]"></div>
+</div>
+</div>
+<div class="space-y-3">
+<div class="h-2 w-full bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full w-3/4 bg-primary-container"></div>
+</div>
+<div class="flex justify-between text-[10px] font-label text-on-surface-variant tracking-tighter">
+<span>ARCH_CORE_ACTIVE</span>
+<span>98.4% ATTRIBUTION_LOAD</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Framework Overview (3-Phase Bento) -->
+<section class="py-32 px-8 lg:px-24 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-4 space-y-6">
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary">The Growth Lifecycle</h2>
+<p class="text-on-surface-variant text-lg">We move beyond static templates. Our architecture is built to respond to real-time market signals and data velocity.</p>
+<div class="pt-8">
+<div class="flex items-center gap-6 mb-8">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container font-headline font-bold text-xl">01</div>
+<div>
+<h4 class="font-headline font-bold text-lg">Foundation</h4>
+<p class="text-sm text-on-surface-variant">The core infrastructure setup.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 mb-8">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container font-headline font-bold text-xl">02</div>
+<div>
+<h4 class="font-headline font-bold text-lg">Execution</h4>
+<p class="text-sm text-on-surface-variant">Kinetic movement and testing.</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container font-headline font-bold text-xl">03</div>
+<div>
+<h4 class="font-headline font-bold text-lg">Expansion</h4>
+<p class="text-sm text-on-surface-variant">Predictive scaling and LTV.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Phase 1 Card -->
+<div class="glass-card p-10 rounded-2xl flex flex-col justify-between border-t border-primary-container/20 group hover:bg-surface-container-high transition-all">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary-container mb-6" data-icon="database">database</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Phase 1: Foundation &amp; Data Architecture</h3>
+<p class="text-on-surface-variant mb-6">Implementing technical tracking, ETL pipelines, and multi-touch attribution models to ensure absolute data integrity.</p>
+</div>
+<ul class="space-y-3 font-label text-sm text-primary-fixed/80">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary-container rounded-full"></span> Unified Data Warehouse</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary-container rounded-full"></span> Attribution Modeling</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary-container rounded-full"></span> Server-Side Tracking</li>
+</ul>
+</div>
+<!-- Phase 2 Card -->
+<div class="glass-card p-10 rounded-2xl flex flex-col justify-between border-t border-primary-container/20 group hover:bg-surface-container-high transition-all">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary-container mb-6" data-icon="bolt">bolt</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Phase 2: Growth Execution</h3>
+<p class="text-on-surface-variant mb-6">Aggressive performance marketing coupled with automated bidding and dynamic creative testing environments.</p>
+</div>
+<ul class="space-y-3 font-label text-sm text-primary-fixed/80">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary-container rounded-full"></span> Algorithmic Bidding</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary-container rounded-full"></span> Dynamic Creative Optimization</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary-container rounded-full"></span> Cross-Channel Synergy</li>
+</ul>
+</div>
+<!-- Phase 3 Card (Span 2) -->
+<div class="glass-card p-10 rounded-2xl md:col-span-2 flex flex-col md:flex-row justify-between gap-8 border-t border-primary-container/20 hover:bg-surface-container-high transition-all">
+<div class="flex-1">
+<span class="material-symbols-outlined text-4xl text-primary-container mb-6" data-icon="insights">insights</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Phase 3: Scale &amp; Optimization</h3>
+<p class="text-on-surface-variant max-w-lg">Using predictive analytics and LTV modeling to identify high-value pockets for market expansion and sustained growth.</p>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-4">
+<div class="p-4 bg-surface-container-lowest rounded">
+<p class="text-[10px] font-label text-primary-container uppercase tracking-widest font-bold">LTV Projection</p>
+<p class="text-2xl font-headline font-bold">+280%</p>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded">
+<p class="text-[10px] font-label text-primary-container uppercase tracking-widest font-bold">CAC Efficiency</p>
+<p class="text-2xl font-headline font-bold">-42%</p>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded">
+<p class="text-[10px] font-label text-primary-container uppercase tracking-widest font-bold">Data Fidelity</p>
+<p class="text-2xl font-headline font-bold">98.4%</p>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded">
+<p class="text-[10px] font-label text-primary-container uppercase tracking-widest font-bold">Market Reach</p>
+<p class="text-2xl font-headline font-bold">GLOBAL</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Data Visualization Section -->
+<section class="py-32 px-8 lg:px-24">
+<div class="max-w-screen-2xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+<div class="flex-1 order-2 lg:order-1">
+<div class="relative">
+<div class="absolute -inset-4 bg-primary-container/5 blur-3xl rounded-full"></div>
+<img alt="Data Dashboard" class="rounded-xl glass-card border border-outline-variant/30 shadow-2xl relative z-10 w-full h-[500px] object-cover" data-alt="Modern dark data visualization dashboard with yellow accent charts glowing against a black glass background with blurred UI elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL3OMDK11Uc9KmzKyLDxXRrrAjMIrlnttK-vgSZh_ETmhAn231pVV3G3K60QATIXfO5RuT5gOXfANUyd9Gv4TFHl4K_7y6iG2hsp4GN41--hiYdmnGnclIuzpMlS_vRYzw0mkbYWvXXj8f9OlrpCQkFx2AsPcb7Wh8WE_y4T_a03tfA9lzAoJZvORQk9mQaDuudm4hrx7Ue8lGa35wyHjqWiNO3-FI5O3lQnnC64hdAVivMa_WtaF6I3ly5XFzYm_0TUHUhzBNmTI"/>
+<!-- Floating Micro-metric -->
+<div class="absolute -top-10 -right-10 glass-card p-6 rounded-xl border-l-4 border-primary-container z-20 hidden md:block shadow-2xl">
+<p class="font-label text-xs text-primary-container mb-2 uppercase font-bold tracking-widest">Real-time Attribution</p>
+<div class="flex items-baseline gap-2">
+<span class="text-3xl font-headline font-bold">99.2%</span>
+<span class="text-xs text-green-400">↑ 1.4%</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-1 order-1 lg:order-2">
+<h2 class="font-headline text-4xl md:text-6xl font-bold tracking-tight text-primary mb-8">Performance is <br/> In the Architecture.</h2>
+<div class="space-y-10">
+<div class="flex gap-6">
+<div class="mt-1 text-primary-container">
+<span class="material-symbols-outlined text-3xl" data-icon="query_stats">query_stats</span>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold mb-2">Granular Data Ingestion</h4>
+<p class="text-on-surface-variant">We don't just look at clicks. We ingest millions of touchpoints from across the stack to build a complete persona narrative.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="mt-1 text-primary-container">
+<span class="material-symbols-outlined text-3xl" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold mb-2">Automated Optimization Loops</h4>
+<p class="text-on-surface-variant">Our frameworks feature self-correcting bidding algorithms that reallocate budget based on LTV potential, not just lead cost.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Strategic Depth (Outcomes) -->
+<section class="py-32 px-8 lg:px-24 bg-surface-container-low kinetic-grid">
+<div class="max-w-5xl mx-auto text-center mb-20">
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary mb-6">Precision Metrics</h2>
+<p class="text-on-surface-variant text-lg">The Kinetic Architect isn't a theory. It's a proven mathematical framework delivering consistent vertical performance.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-screen-2xl mx-auto">
+<div class="p-8 glass-card border border-outline-variant/10 hover:border-primary-container/30 transition-all">
+<h5 class="font-label text-primary-container font-bold text-sm tracking-[0.2em] mb-4">ATTRIBUTION</h5>
+<p class="text-4xl font-headline font-bold mb-6">98.4% Accuracy</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Eliminating the "black box" of marketing spend by mapping every dollar to a specific outcome in the customer journey.</p>
+</div>
+<div class="p-8 glass-card border border-outline-variant/10 hover:border-primary-container/30 transition-all">
+<h5 class="font-label text-primary-container font-bold text-sm tracking-[0.2em] mb-4">EFFICIENCY</h5>
+<p class="text-4xl font-headline font-bold mb-6">42% CAC Reduction</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Lowering customer acquisition costs through surgical creative targeting and real-time bid optimization loops.</p>
+</div>
+<div class="p-8 glass-card border border-outline-variant/10 hover:border-primary-container/30 transition-all">
+<h5 class="font-label text-primary-container font-bold text-sm tracking-[0.2em] mb-4">VELOCITY</h5>
+<p class="text-4xl font-headline font-bold mb-6">3.2x Scale Speed</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Shortening the time-to-market for new campaigns by leveraging pre-built data structures and rapid testing cycles.</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-40 px-8 lg:px-24 text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary-container/5 via-transparent to-transparent"></div>
+<div class="max-w-4xl mx-auto relative z-10">
+<h2 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-primary mb-10 leading-[1.1]">Ready to Architect <br/> Your Growth?</h2>
+<p class="text-xl text-on-surface-variant mb-14 font-light">Join the top 1% of B2B enterprises leveraging kinetic growth architecture.</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-primary-container text-on-primary-container px-12 py-5 font-label font-bold text-xl rounded-lg hover:shadow-[0_0_50px_rgba(255,215,0,0.3)] transition-all scale-105 hover:scale-110 duration-300">
+                        Schedule Your Strategic Audit
+                    </button>
+</div>
+<p class="mt-10 font-label text-xs text-outline tracking-widest uppercase">Limited intake availability for Q4 2024</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#111318] py-12 px-12 border-t border-[#4D4732]/15">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 w-full max-w-7xl mx-auto">
+<div class="font-['Space_Grotesk'] font-bold text-white text-lg">
+                MYD Digital
+            </div>
+<p class="font-['Space_Grotesk'] text-sm uppercase tracking-widest text-gray-500 text-center md:text-left">
+                © 2024 MYD Digital. Precision Growth Engineering.
+            </p>
+<div class="flex gap-8">
+<a class="text-gray-500 hover:text-yellow-500 transition-opacity duration-200 text-sm font-['Space_Grotesk'] uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-gray-500 hover:text-yellow-500 transition-opacity duration-200 text-sm font-['Space_Grotesk'] uppercase tracking-widest" href="#">Terms of Service</a>
+<a class="text-gray-500 hover:text-yellow-500 transition-opacity duration-200 text-sm font-['Space_Grotesk'] uppercase tracking-widest" href="#">LinkedIn</a>
+<a class="text-gray-500 hover:text-yellow-500 transition-opacity duration-200 text-sm font-['Space_Grotesk'] uppercase tracking-widest" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>
